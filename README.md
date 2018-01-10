@@ -1,5 +1,8 @@
 # gateway-setup
 
+## avahi service advertisement and descovery
+   
+   
 ## Install packages
 
 ```
@@ -28,3 +31,5 @@ $vi /etc/nsswitch.conf
  ```
  hosts: ... mdns_minimal [NOTFOUND=return] resolve [!UNAVAIL=return] dns ...
  ```
+
+## Adding services
