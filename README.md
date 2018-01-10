@@ -18,3 +18,13 @@ $ getent hosts
 $ getent hosts test.local
 $ ping test.local
 ```
+
+## Resolve hostname
+```
+$vi /etc/nsswitch.conf
+```
+ Change the hosts line to include mdns_minimal [NOTFOUND=return] before resolve and dns   
+    
+ ```
+ hosts: ... mdns_minimal [NOTFOUND=return] resolve [!UNAVAIL=return] dns ...
+ ```
